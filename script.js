@@ -23,9 +23,10 @@ function addCells(size, parentElement) {
 function getGridSize() {
     let gridSize;
     // Limit number of cells
-    do {
+    console.log(typeof gridSize);
+    while (gridSize > 100 || gridSize < 1 ||gridSize === undefined || gridSize === NaN) {
         gridSize = prompt('How many grid?');
-    } while (gridSize > 100);
+    };
 
     if (gridSize === null) {
         return;
