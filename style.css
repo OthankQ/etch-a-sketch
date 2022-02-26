@@ -4,8 +4,19 @@
 }
 
 .container {
-    height: 80vh;
-    width: 80vw;
+    height: 50vw;
+    width: 50vw;
     border: 1px solid black;
     margin: 10vh auto;
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+}
+
+.cell {
+    
+}
+
+.cell:hover {
+    background: black;
 }
